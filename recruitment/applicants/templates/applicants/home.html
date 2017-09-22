@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Job Portal</title>
+
+    <link href="{% static 'css/stylish-portfolio.css' %}" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <nav id="sidebar-wrapper">
+    </nav>
+
+    <!-- Header -->
+    <header class="header" id="top">
+      <div class="text-vertical-center">
+        <h1>4a Designers </h1>
+        <h3>We are hiring join us </h3>
+        <br>
+        <button type="button">
+        <a href="{% url 'registration' %}" class="btn btn-dark btn-lg js-scroll-trigger">Click here</a>
+        </button>
+      </div>
+    </header>
+
+  </body>
+
+</html>
+
+
+
+
+{% endblock %}
+

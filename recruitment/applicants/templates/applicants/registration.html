@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>Job Portal</title>
+ 	<style type="text/css">
+ 		body {
+  height: 100%;
+  width: 100%;
+  background: #0099ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+ 	</style>
+ </head>
+ <body>
+ 
+ </html>
+  <p>
+  	<button type="button">
+  	<a href="{% url 'home' %}">Home</a>
+  	</button>
+  </p>
+
+<div>
+	<center>
+
+		<h1>Please Provide your details</h1>
+  		<form method="post" enctype="multipart/form-data">
+    		{% csrf_token %}
+    		{{ form.as_p }}
+    		<button type="submit">Upload</button>
+  		</form>
+	</center>
+</div>
+</body>
+{% endblock %}
