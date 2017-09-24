@@ -93,3 +93,7 @@ ENV/
 staticfiles
 media
 *.sqlite3
+venv
+*.pyc
+staticfiles
+.env
