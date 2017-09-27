@@ -31,7 +31,7 @@ create super users:
 
 ```
 
-## Admin Acces
+## Admin Access
 You will have to create superuser to access admin part for that run python manage.py creratesuperuser
 command in terminal  
 
