@@ -25,6 +25,16 @@ python manage.py migrate
 python manage.py runserver
 ```
 
+```bash
+create super users:
+ python manage.py creratesuperuser
+
+```
+
+## Admin Acces
+You will have to create superuser to access admin part for that run python manage.py creratesuperuser
+command in terminal  
+
 ## Project Directory
 1. recruitment is main project folder
 2. applicants is an App under recruitment project
