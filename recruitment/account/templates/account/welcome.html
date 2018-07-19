@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Dashboard
+{% endblock %}
+
+{% block content %}
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Job Portal</title>
+
+    <link href="{% static 'css/account.css' %}" rel="stylesheet">
+    <link href="{% static 'js/navbar-burger.js' %}" rel="stylesheet">
+
+  </head>
+
+<body>
+<li><a href="{% url 'logout' %}" >Logout</a>
+</li>
+
+</body>
+</html>
+{% endblock %}

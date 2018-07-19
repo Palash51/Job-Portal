@@ -2,6 +2,7 @@ from django import forms
 
 from recruitment.applicants.models import Document
 
+from django.contrib.auth.models import User
 
 class DocumentForm(forms.ModelForm):
 	"""

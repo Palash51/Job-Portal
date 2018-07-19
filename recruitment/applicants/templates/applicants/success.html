@@ -1,3 +1,7 @@
+
+{% block content %}
+    <p>Hello {{ request.user }}</p>
+{% endblock %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,6 +16,7 @@
         <br><br> <h2 style="color:#0fad00">You have successfully applied</h2>
         <img src="http://osmhotels.com//assets/check-true.jpg">
         <p style="font-size:20px;color:#5C5C5C;">Thank you for applying for this postion, we will contact you soon.</p>
+        <p> {{ name }} </p>
 
         <p>
     <button type="button">
